@@ -25,13 +25,13 @@ function showResult(input) {
     
     if (data.gender) {
       
-      document.querySelector('.text_result').innerHTML = `${nameForScreen} is <span>${data.gender}</span>`
+      document.querySelector('.text_result').innerHTML = `<span>${nameForScreen}</span> is <span>${data.gender}</span>`
 
       let probabilityForScreen = (data.probability * 100).toFixed(0)
       document.querySelector('.probability').textContent = `Probability: ${probabilityForScreen}%`
 
     } else {
-      document.querySelector('.text_result').innerHTML = `Имя ${nameForScreen} </br><span>не найдено</span>`
+      document.querySelector('.text_result').innerHTML = `Имя <span>${nameForScreen}</span> </br><span>не найдено</span>`
       document.querySelector('.probability').textContent = ''
 
     }

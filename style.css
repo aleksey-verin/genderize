@@ -101,11 +101,14 @@ body {
   font-family: "Roboto", sans-serif;
   color: azure;
   font-size: 18px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 
 .container {
-  width: 400px;
+  width: 100%;
+  /* width: 400px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -122,7 +125,8 @@ body {
   
 }
 .subtitle {
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -179,10 +183,16 @@ button:active {
   font-size: 32px;
   margin-bottom: 20px;
   text-align: center;
+  line-height: 1.1;
   /* justify-content: center; */
 }
 
-.text_result span {
+.text_result span:first-child {
+  color: rgb(191, 86, 207);
+  
+}
+
+.text_result span:last-child {
   color: rgb(86, 93, 207);
 }
 
