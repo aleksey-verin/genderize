@@ -20,20 +20,16 @@ function showResult(input) {
   response
   .then(response => response.json())
   .then(function(data) {
-    console.log(data)
+
     let nameForScreen = data.name[0].toUpperCase() + data.name.slice(1)
+    let probabilityForScreen = (data.probability * 100).toFixed(0)
     
     if (data.gender) {
-      
       document.querySelector('.text_result').innerHTML = `<span>${nameForScreen}</span> is <span>${data.gender}</span>`
-
-      let probabilityForScreen = (data.probability * 100).toFixed(0)
       document.querySelector('.probability').textContent = `Probability: ${probabilityForScreen}%`
-
     } else {
       document.querySelector('.text_result').innerHTML = `Имя <span>${nameForScreen}</span> </br><span>не найдено</span>`
       document.querySelector('.probability').textContent = ''
-
     }
   })
   .catch(function(err) {

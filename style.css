@@ -105,7 +105,6 @@ body {
   margin: 0 auto;
 }
 
-
 .container {
   width: 100%;
   /* width: 400px; */
@@ -117,6 +116,7 @@ body {
   background-color: rgb(30, 30, 30);
   border-radius: 20px;
 }
+
 .title {
   font-size: 36px;
   text-align: center;
@@ -124,6 +124,7 @@ body {
   color: rgb(86, 93, 207);
   
 }
+
 .subtitle {
   font-size: 20px;
   line-height: 1.2;
@@ -136,8 +137,8 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
   flex-wrap: wrap;
-
 }
+
 .input_name {
   width: 200px;
   height: 40px;
@@ -145,6 +146,7 @@ body {
   padding-left: 10px;
   font-size: 14px;
 }
+
 .input_name:hover {
 border: 1px solid rgb(86, 93, 207);;
 box-shadow: inset 0px 0px 0px 1px rgb(86, 93, 207);;
@@ -172,7 +174,6 @@ button:active {
   color: rgb(174, 184, 184);
 }
 
-
 .result {
   display: flex;
   flex-direction: column;
@@ -180,6 +181,7 @@ button:active {
   flex-wrap: wrap;
   /* justify-content: center; */
 }
+
 .text_result {
   font-size: 32px;
   margin-bottom: 20px;
@@ -195,8 +197,4 @@ button:active {
 
 .text_result span:last-child {
   color: rgb(86, 93, 207);
-}
-
-.probability {
-
 }
