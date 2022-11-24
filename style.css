@@ -135,10 +135,11 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 
 }
 .input_name {
-  width: 230px;
+  width: 200px;
   height: 40px;
   border-radius: 20px;
   padding-left: 10px;
@@ -176,6 +177,7 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   /* justify-content: center; */
 }
 .text_result {
@@ -183,7 +185,7 @@ button:active {
   margin-bottom: 20px;
   text-align: center;
   line-height: 1.1;
-  /* justify-content: center; */
+
 }
 
 .text_result span:first-child {
