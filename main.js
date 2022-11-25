@@ -16,7 +16,6 @@ function getMale(event) {
   }
 }
 
-
 function cyrillicToLatin (anyString) {
     
   let rusToEng = {
@@ -77,5 +76,3 @@ function showResult(nameFromInput, gender, probability) {
       break;
   }
 }
-
-
