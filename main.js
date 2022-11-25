@@ -51,14 +51,14 @@ function showResult(input) {
     
     if (data.gender) {
 
-      let maleAfterTranstate
+      let genderAfterTranslate
       if (data.gender === 'male') {
-        maleAfterTranstate = 'мужчина'
+        genderAfterTranslate = 'мужчина'
       } else {
-        maleAfterTranstate = 'женщина'
+        genderAfterTranslate = 'женщина'
       }
       
-      document.querySelector('.text_result').innerHTML = `<span>${nameForScreen}</span> - <span>${maleAfterTranstate}</span>`
+      document.querySelector('.text_result').innerHTML = `<span>${nameForScreen}</span> - <span>${genderAfterTranslate}</span>`
       document.querySelector('.probability').textContent = `С вероятностью: ${probabilityForScreen}%`
     } else {
       document.querySelector('.text_result').innerHTML = `Имя <span>${nameForScreen}</span> </br><span>не найдено</span>`
